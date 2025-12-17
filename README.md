@@ -2,13 +2,52 @@
 
 将小米 Mimo AI 转换为 OpenAI 兼容 API，支持深度思考功能。
 
-## 快速开始
+## 安装
+
+### 方式一：下载预编译二进制
+
+从 [Releases](https://github.com/leookun/mimo2api/releases) 页面下载对应系统的二进制文件：
+
+**Linux:**
+```bash
+curl -LO https://github.com/leookun/mimo2api/releases/latest/download/mimo2api-linux-amd64
+chmod +x mimo2api-linux-amd64
+./mimo2api-linux-amd64
+```
+
+**macOS (Intel):**
+```bash
+curl -LO https://github.com/leookun/mimo2api/releases/latest/download/mimo2api-darwin-amd64
+chmod +x mimo2api-darwin-amd64
+sudo xattr -cr mimo2api-darwin-amd64  # 解除安全限制
+./mimo2api-darwin-amd64
+```
+
+**macOS (Apple Silicon):**
+```bash
+curl -LO https://github.com/leookun/mimo2api/releases/latest/download/mimo2api-darwin-arm64
+chmod +x mimo2api-darwin-arm64
+sudo xattr -cr mimo2api-darwin-arm64  # 解除安全限制
+./mimo2api-darwin-arm64
+```
+
+**Windows:**
+
+下载 `mimo2api-windows-amd64.exe`，双击运行或在命令行执行。
+
+### 方式二：从源码编译
 
 ```bash
-# 编译
+git clone https://github.com/leookun/mimo2api.git
+cd mimo2api
 go build -o mimo2api .
+./mimo2api
+```
 
-# 运行 (默认端口 8080)
+## 运行
+
+```bash
+# 默认端口 8080
 ./mimo2api
 
 # 指定端口
