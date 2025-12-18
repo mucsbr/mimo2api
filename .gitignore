@@ -1,4 +1,37 @@
+# Binary output
 mimo2api
 mimo2api-*
-config.json
 *.exe
+*.dll
+*.so
+*.dylib
+
+# Config (contains sensitive data)
+config.json
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Dependencies
+vendor/
+
+# Test outputs
+*.test
+*.out
+coverage.txt
+coverage.html
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temp files
+tmp/
+temp/

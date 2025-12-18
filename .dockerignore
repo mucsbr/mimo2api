@@ -1,0 +1,40 @@
+# Git
+.git/
+.gitignore
+.github/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Binary output (will rebuild in container)
+mimo2api
+mimo2api-*
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Config (mount at runtime)
+config.json
+
+# Documentation
+README.md
+LICENSE
+*.md
+
+# Test files
+*_test.go
+*.test
+coverage.*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temp files
+tmp/
+temp/
+*.log
